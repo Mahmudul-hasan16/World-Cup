@@ -1,0 +1,149 @@
+/* Google font use  */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* header container-one  start */
+
+.container-one {
+    display: flex;
+    background-color: #161616;
+    border-radius: 30px;
+    width: 80%;
+    height: 646px;
+    margin: 50px 140px;
+
+}
+
+.show {
+    position: absolute;
+    width: 531px;
+    height: 424px;
+    left: 246px;
+    top: 161px;
+
+}
+
+.font-all {
+    color: #FFFFFF;
+}
+
+.show h1 {
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.btn-one {
+    background-color: #DD0000;
+    padding: 16px 35px;
+    color: #FFFFFF;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+
+
+.banner-image img {
+    position: absolute;
+    width: 500px;
+    height: 600px;
+    left: 801px;
+    top: 95px;
+}
+
+/* header container-one  end here */
+
+
+/* <!---------------------------------------------------------
+         Nav bar create like upcoming match, all group, Blog 
+    ----------------------------------------------------------> */
+.container-nav {
+    width: 312px;
+    background-color: #161616;
+    justify-content: center;
+    align-items: center;
+    margin-left: 140px;
+    height: 312px;
+    border-radius: 10px;
+}
+
+.all-nav {
+    width: 252px;
+    height: 252px;
+}
+
+.all-nav button {
+    width: 252px;
+    height: 64px;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 30px;
+    font-weight: 500;
+    font-size: 20px;
+
+}
+
+.all-nav .btn-red {
+    background-color: #DD0000;
+    color: white;
+}
+
+
+/*----------------------------
+ blogs type pic and details  
+ ----------------------------*/
+
+.container-second {
+    display: flex;
+}
+
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+}
+
+.blog {
+    width: 275px;
+    height: 380px;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+div img {
+    width: 275px;
+    height: 175px;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.blog .transfer {
+    font-weight: 500;
+    font-size: 15px;
+    border: 1px solid #161616;
+    border-radius: 5px;
+    width: 67px;
+    height: 24px;
+}
+
+.blog-information {
+    margin-left: 10px;
+}
+
+.main-timer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+/* footer input now  */
