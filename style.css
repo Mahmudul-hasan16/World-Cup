@@ -180,3 +180,45 @@ hr {
     display: inline-block;
     margin-left: 30px;
 }
+
+
+/*-------------------------------------------
+    upcoming flag and match time and date 
+--------------------------------------------*/
+
+.upcoming-match .matches {
+    width: 312px;
+    height: 242px;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+
+.match {
+    width: 250px;
+    height: 170px;
+    margin: 50px 30px;
+    border: 1px solid red;
+}
+
+.flag {
+    display: flex;
+    width: 252px;
+    height: 56.18px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flag img {
+    width: 93.04px;
+    height: 56.18px;
+}
+
+article {
+    text-align: center;
+}
+
+article .font-cng {
+    font-weight: 600;
+    font-size: 20px;
+}
