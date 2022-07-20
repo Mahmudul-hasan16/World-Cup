@@ -148,7 +148,7 @@ h3 {
 
 
 /* --------------------------
-      footer input now 
+  footer input now for blog
 ---------------------------- */
 
 footer {
@@ -181,29 +181,39 @@ hr {
     margin-left: 30px;
 }
 
+footer div p {
+    margin-left: 400px;
+}
+
 
 /*-------------------------------------------
     upcoming flag and match time and date 
 --------------------------------------------*/
 
+.upcoming-match {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    width: 500px;
+}
+
 .upcoming-match .matches {
-    width: 312px;
+    width: 275px;
     height: 242px;
     border: 1px solid #E8E8E8;
     border-radius: 10px;
-    margin-left: 30px;
+    margin-left: 20px;
+    margin-bottom: 10px;
 }
 
 .match {
     width: 250px;
     height: 170px;
-    margin: 50px 30px;
-    border: 1px solid red;
+    margin: 50px 15px;
 }
 
 .flag {
     display: flex;
-    width: 252px;
+    width: 240px;
     height: 56.18px;
     align-items: center;
     justify-content: space-between;
