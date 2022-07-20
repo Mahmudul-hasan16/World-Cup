@@ -5,26 +5,48 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* header container-one  start */
 
+.first-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
 .container-one {
     display: flex;
+    align-items: center;
     background-color: #161616;
     border-radius: 30px;
     width: 80%;
-    height: 646px;
-    margin: 50px 140px;
+    height: 80vh;
+    padding: 50px;
+    padding-bottom: 0%;
 
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.all-nav .btn-white {
+    color: #161616;
+}
+
 .show {
-    position: absolute;
-    width: 531px;
-    height: 424px;
-    left: 246px;
-    top: 161px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
 }
 
@@ -34,25 +56,30 @@ body {
 
 .show h1 {
     font-weight: 700;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .btn-one {
     background-color: #DD0000;
     padding: 16px 35px;
+    width: 30%;
     color: #FFFFFF;
     gap: 10px;
     border-radius: 10px;
+    min-width: 180px;
 }
 
 
 
+.banner-image {
+    width: 50%;
+
+}
+
 .banner-image img {
-    position: absolute;
-    width: 500px;
-    height: 600px;
-    left: 801px;
-    top: 95px;
+    width: 100%;
+    height: 100%;
+
 }
 
 /* header container-one  end here */
@@ -68,8 +95,11 @@ body {
     align-items: center;
     margin-left: 140px;
     height: 312px;
+    margin-bottom: 15px;
+    margin-top: 15px;
     border-radius: 10px;
 }
+
 
 .all-nav {
     width: 252px;
@@ -99,6 +129,8 @@ body {
 
 .container-second {
     display: flex;
+    margin-top: 40px;
+    width: 100%;
 }
 
 
@@ -133,6 +165,7 @@ h3 {
     border-radius: 5px;
     width: 67px;
     height: 24px;
+    padding: 2px 15px;
 }
 
 .blog-information {
@@ -146,7 +179,6 @@ h3 {
 }
 
 
-
 /* --------------------------
   footer input now for blog
 ---------------------------- */
@@ -154,12 +186,12 @@ h3 {
 footer {
     background-color: #161616;
     width: 100%;
-    height: 444px;
+    height: 70%;
 }
 
 .h2-size {
     font-weight: 600;
-    font-size: 40px;
+    font-size: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -172,17 +204,13 @@ hr {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.privacy {
-    margin-left: 300px;
-}
-
-.privacy .terms {
-    display: inline-block;
-    margin-left: 30px;
+.privacy>div {
+    display: flex;
+    justify-content: center;
 }
 
 footer div p {
-    margin-left: 400px;
+    margin-left: 20px;
 }
 
 
@@ -231,4 +259,65 @@ article {
 article .font-cng {
     font-weight: 600;
     font-size: 20px;
+}
+
+/*------------------------------------------- 
+Responsive the site using media quaries
+------------------------------------------- */
+
+
+/* ipad or tablet */
+
+@media only screen and (min-width:688px) and (max-width:992) {
+    .container-one {
+        width: 100%;
+    }
+
+    .show {
+        width: 50%;
+    }
+
+    .font-all {
+        font-size: 5px;
+    }
+
+    .container-nav .all-nav {
+        flex-direction: row;
+    }
+}
+
+
+/* mobile phone  */
+
+@media only screen and (max-width:687px) {
+    .container-one {
+        flex-direction: column;
+        height: 100%;
+        text-align: center;
+        padding: 0%;
+    }
+
+    .container-second {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .all-nav {
+        margin-left: 0%;
+
+    }
+
+    .container-nav {
+        margin-left: 0%;
+
+    }
+
+    .privacy>div {
+        flex-direction: column;
+        align-items: center;
+    }
 }
